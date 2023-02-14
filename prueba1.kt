@@ -1,20 +1,12 @@
-// Ejemplo 1: Ingrese la edad de una persona y valide si es mayor o menor de edad, adicionalmente si
-//  la persona tiene 25 años menciónelo.
 
-fun main1() {
-    println("Ingrese su edad: ")
-    val age = readLine()!!.toInt()
-
-    println("Ingrese su nombre: ")
-    val name = readLine()
-
-    if (age == 25) {
-        println("usted tiene 25 años, señor $name")
-    } else if (age < 18) {
-        println("usted es menor de edad")
-    } else if (age >= 18) {
-        println("usted es mayor de edad")
-    } else {
-        println("ingrese porfavor un numero")
-    }
+ //queremos que el usuario introduzca un numero dentro de un rango el do while 
+//es una buena opción porque se ejecutará al menos una vez y 
+//si mete un número no valido pues seguimos en el bucle hasta que se decida a poner uno correcto.
+fun main() {
+var numero:Int
+Do {
+    println("Introduce un numero entre 1 y 100")
+    numero = readLine()!!.toInt()
+} while(numero !in 1..100) // numero < 1 || numero > 100
+println("Gracias")
 }

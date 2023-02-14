@@ -1,5 +1,7 @@
-// Ejemplo 2:haga un algoritmo que calcule el promedio de 3 números  y si el promedio es mayor a 3.5 indique que gana la materia, si el promedio es mayor a 2 y menor o igual a 3.5 entonces indique que puede recuperar
-fun main2(){
+// Ejemplo 2:haga un algoritmo que calcule el promedio de 3 números  y si el promedio es mayor a 3.5 
+// indique que gana la materia, si el promedio es mayor a 2 y menor o igual a 3.5 entonces indique que 
+// puede recuperar
+fun main(){
     println("ingrese su primera nota: ")
     var Nota1 = readLine()!!.toDouble()
     
